@@ -29,3 +29,6 @@ echo "Average is $average<br>";
 echo "Removing duplicates: <br>New Array:<br>";
 $noDup = removeDups($numbers);
 printArr($noDup);
+
+echo "How many of each number?<br>";
+printKeyValue(distribution($numbers));
