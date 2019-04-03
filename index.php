@@ -19,3 +19,7 @@ $numbers = array(7,9,8,9,8,8,6);
 
 printArr($numbers);
 
+$biggest = largest($numbers);
+
+echo "Largest number is: $biggest";
+
