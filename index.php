@@ -22,4 +22,10 @@ printArr($numbers);
 $biggest = largest($numbers);
 
 echo "Largest number is: $biggest";
+echo "<br>";
+$average = average($numbers);
+echo "Average is $average<br>";
 
+echo "Removing duplicates: <br>New Array:<br>";
+$noDup = removeDups($numbers);
+printArr($noDup);
