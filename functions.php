@@ -6,7 +6,7 @@
  */
 function printArr($myArray) {
     foreach($myArray as $item) {
-        echo "<p>$item</p>";
+        echo "$item<br>";
     }
 }
 
@@ -22,4 +22,24 @@ function largest($myArray) {
         }
     }
     return $largest;
+}
+
+function average($myArray) {
+    $sum = 0;
+    foreach($myArray as $item) {
+        $sum += $item;
+    }
+    return $sum / sizeof($myArray);
+}
+
+function removeDups($myArray) {
+    $newArray = array();
+    foreach($myArray as $item) {
+        if(!in_array($item, $newArray)) {
+            $newArray[] = $item;
+        }
+    }
+    return $newArray;
+
+//    return array_unique($myArray);
 }
