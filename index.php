@@ -13,12 +13,7 @@
 </html>
 
 <?php
-
-function printArr($myArray) {
-    foreach($myArray as $item) {
-        echo "<p>$item</p>";
-    }
-}
+include("functions.php");
 
 $numbers = array(7,9,8,9,8,8,6);
 
